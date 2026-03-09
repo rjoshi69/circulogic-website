@@ -259,7 +259,7 @@ function closeDrawer() {
   if (!form || !fields || !thankyou) return;
 
   form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Remove this line when using real Formspree endpoint
+    // e.preventDefault(); // Remove this line when using real Formspree endpoint
 
     // Basic validation
     const name    = document.getElementById('f-name');
