@@ -325,10 +325,9 @@ section {
 
 /* ── 6. Hero ──────────────────────────────────────────────── */
 #hero {
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: var(--nav-height);
+  padding: calc(var(--nav-height) + var(--space-20)) 0 var(--space-16);
   background: var(--bg-warm);
   position: relative;
   overflow: hidden;
@@ -430,6 +429,7 @@ section {
 /* ── 8. Problem Section ───────────────────────────────────── */
 #problem {
   background: var(--bg-warm);
+  padding-top: var(--space-16);
 }
 
 .problem-grid {
