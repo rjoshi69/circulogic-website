@@ -4,33 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CircuLogic — Actuarial Returns Intelligence for Modern Retail</title>
-  <meta name="description" content="CircuLogic applies actuarial intelligence to every return decision — rewarding your best customers and protecting your margin from your worst. AI-driven returns intelligence for ecommerce and retail." />
+  <meta name="description" content="CircuLogic applies actuarial intelligence to every return decision — rewarding your best customers and protecting your margin from your worst." />
   <meta property="og:title" content="CircuLogic — Actuarial Returns Intelligence for Modern Retail" />
-  <meta property="og:description" content="Turn Return Risk Into Competitive Advantage. CircuLogic scores every customer, predicts expected loss, and generates individualized return policies at scale." />
+  <meta property="og:description" content="Turn Return Risk Into Competitive Advantage. AI-driven returns intelligence for ecommerce and retail." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://circulogic.ai" />
 
-  <!-- Favicon: geometric SVG mark -->
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-  <!-- Google Fonts: Syne (display) + DM Sans (body) + Space Mono (data) -->
+  <!-- Google Fonts: DM Serif Display + Source Sans 3 + Space Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Sans+3:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-
-<!-- ════════════════════════════════════════════
-     ANIMATED BACKGROUND
-     ════════════════════════════════════════════ -->
-<div class="bg-canvas" aria-hidden="true">
-  <div class="bg-grid"></div>
-  <div class="bg-orb bg-orb-1"></div>
-  <div class="bg-orb bg-orb-2"></div>
-  <div class="bg-orb bg-orb-3"></div>
-</div>
 
 <!-- ════════════════════════════════════════════
      NAVIGATION
@@ -53,19 +42,16 @@
     <a href="#contact" class="btn btn-primary nav-cta">Request Demo</a>
 
     <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile drawer -->
   <nav class="nav-drawer" id="nav-drawer" aria-label="Mobile navigation">
-    <a href="#solution"   onclick="closeDrawer()">Solution</a>
-    <a href="#howitworks" onclick="closeDrawer()">How It Works</a>
-    <a href="#metrics"    onclick="closeDrawer()">Metrics</a>
+    <a href="#solution"    onclick="closeDrawer()">Solution</a>
+    <a href="#howitworks"  onclick="closeDrawer()">How It Works</a>
+    <a href="#metrics"     onclick="closeDrawer()">Metrics</a>
     <a href="#integration" onclick="closeDrawer()">Integration</a>
-    <a href="#contact"    onclick="closeDrawer()">Contact</a>
+    <a href="#contact"     onclick="closeDrawer()">Contact</a>
     <a href="#contact" class="btn btn-primary" style="text-align:center;margin-top:8px;" onclick="closeDrawer()">Request Demo</a>
   </nav>
 </header>
@@ -81,9 +67,7 @@
       <div class="hero-content">
         <span class="hero-eyebrow">Actuarial Returns Intelligence</span>
 
-        <h1 class="hero-title">
-          Turn Return Risk Into&nbsp;Competitive Advantage
-        </h1>
+        <h1 class="hero-title">Turn Return Risk<br>Into Competitive Advantage</h1>
 
         <p class="hero-sub">
           CircuLogic applies actuarial intelligence to every return decision —
@@ -97,131 +81,88 @@
 
         <div class="hero-stats">
           <div class="stat-item">
-            <div class="stat-value mono" id="stat-1" data-target="890" data-suffix="B" data-prefix="$">$0B</div>
+            <div class="stat-value" id="stat-1" data-target="890">$0B</div>
             <div class="stat-label">Annual US return volume</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value mono" id="stat-2" data-target="16.5" data-suffix="%" data-decimal="1">0%</div>
+            <div class="stat-value" id="stat-2" data-target="16.5">0%</div>
             <div class="stat-label">Average ecommerce return rate</div>
           </div>
           <div class="stat-item">
-            <div class="stat-value mono" id="stat-3" data-target="66" data-suffix="%">0%</div>
+            <div class="stat-value" id="stat-3" data-target="66">0%</div>
             <div class="stat-label">Returns never reaching primary resale</div>
           </div>
         </div>
       </div>
 
-      <!-- Hero visual: animated closed loop ring -->
+      <!-- Hero visual: elegant circular arc diagram -->
       <div class="hero-visual" aria-hidden="true">
-        <div class="loop-svg-wrap">
-          <svg viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg" id="hero-loop">
-            <!-- Outer decorative rings -->
-            <circle cx="230" cy="230" r="210" stroke="rgba(0,200,180,0.06)" stroke-width="1" stroke-dasharray="8 4"/>
-            <circle cx="230" cy="230" r="185" stroke="rgba(0,200,180,0.1)" stroke-width="1"/>
-            <circle cx="230" cy="230" r="155" stroke="rgba(0,200,180,0.08)" stroke-width="1" stroke-dasharray="3 6"/>
+        <svg viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Decorative outer rings -->
+          <circle cx="220" cy="220" r="210" stroke="#C8D5B9" stroke-width="1" stroke-dasharray="6 4" opacity="0.5"/>
+          <circle cx="220" cy="220" r="180" stroke="#C8D5B9" stroke-width="1" opacity="0.6"/>
 
-            <!-- Main orbit ring -->
-            <circle cx="230" cy="230" r="130" stroke="rgba(0,200,180,0.25)" stroke-width="1.5"/>
+          <!-- Main orbit -->
+          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="1.5" opacity="0.25"/>
+          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="2.5" stroke-dasharray="70 842" stroke-linecap="round" opacity="0.5">
+            <animateTransform attributeName="transform" type="rotate" from="0 220 220" to="360 220 220" dur="10s" repeatCount="indefinite"/>
+          </circle>
 
-            <!-- Animated sweep line -->
-            <circle cx="230" cy="230" r="130"
-              stroke="url(#sweepGrad)"
-              stroke-width="3"
-              stroke-linecap="round"
-              stroke-dasharray="80 738"
-              stroke-dashoffset="0">
-              <animateTransform attributeName="transform" type="rotate"
-                from="0 230 230" to="360 230 230" dur="8s" repeatCount="indefinite"/>
-            </circle>
+          <!-- Center -->
+          <circle cx="220" cy="220" r="52" fill="#F7F5F2" stroke="#C8D5B9" stroke-width="1.5"/>
+          <circle cx="220" cy="220" r="36" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="1" opacity="0.6"/>
+          <text x="220" y="216" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#2D5016" letter-spacing="2">CLOSED</text>
+          <text x="220" y="228" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#2D5016" letter-spacing="2">LOOP</text>
 
-            <!-- Center core -->
-            <circle cx="230" cy="230" r="48" fill="rgba(0,200,180,0.05)" stroke="rgba(0,200,180,0.3)" stroke-width="1.5"/>
-            <circle cx="230" cy="230" r="32" fill="rgba(0,200,180,0.08)" stroke="rgba(0,200,180,0.5)" stroke-width="1"/>
-            <text x="230" y="226" text-anchor="middle" font-family="Space Mono, monospace" font-size="9" fill="#00C8B4" letter-spacing="2">CIRCU</text>
-            <text x="230" y="240" text-anchor="middle" font-family="Space Mono, monospace" font-size="9" fill="#00C8B4" letter-spacing="2">LOGIC</text>
+          <!-- 8 nodes around orbit (r=145, center=220) -->
+          <!-- Standard nodes -->
+          <g><circle cx="220" cy="75" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="220" cy="75" r="3" fill="#2D5016"/></g>
+          <g><circle cx="322.5" cy="117.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="322.5" cy="117.5" r="3" fill="#2D5016"/></g>
+          <g><circle cx="322.5" cy="322.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="322.5" cy="322.5" r="3" fill="#2D5016"/></g>
+          <g><circle cx="220" cy="365" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="220" cy="365" r="3" fill="#2D5016"/></g>
+          <g><circle cx="117.5" cy="322.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="117.5" cy="322.5" r="3" fill="#2D5016"/></g>
+          <g><circle cx="75" cy="220" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="75" cy="220" r="3" fill="#2D5016"/></g>
 
-            <!-- 8 nodes on the orbit, evenly spaced (45° apart) -->
-            <!-- Node positions: 0°=top, then 45°, 90°...315° -->
-            <!-- (cx,cy) = (230 + 130*sin(angle), 230 - 130*cos(angle)) -->
+          <!-- Highlighted nodes (3→right, 5→bottom-left, 8→top-left) -->
+          <g><circle cx="365" cy="220" r="11" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2"/><circle cx="365" cy="220" r="4.5" fill="#8B9D3B"/></g>
+          <g><circle cx="117.5" cy="117.5" r="11" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2"/><circle cx="117.5" cy="117.5" r="4.5" fill="#8B9D3B"/></g>
 
-            <!-- Node 1: 0° — top -->
-            <g class="hero-node">
-              <circle cx="230" cy="100" r="9" fill="rgba(0,200,180,0.15)" stroke="#00C8B4" stroke-width="1.5">
-                <animate attributeName="r" values="9;11;9" dur="3s" repeatCount="indefinite" begin="0s"/>
-              </circle>
-              <circle cx="230" cy="100" r="4" fill="#00C8B4"/>
-            </g>
+          <!-- Subtle connecting arcs -->
+          <line x1="220" y1="75" x2="365" y2="220" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+          <line x1="365" y1="220" x2="220" y2="365" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+          <line x1="220" y1="365" x2="75" y2="220" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+          <line x1="75" y1="220" x2="220" y2="75" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
 
-            <!-- Node 2: 45° -->
-            <g class="hero-node">
-              <circle cx="321.9" cy="138.1" r="9" fill="rgba(0,200,180,0.1)" stroke="rgba(0,200,180,0.5)" stroke-width="1.5"/>
-              <circle cx="321.9" cy="138.1" r="3.5" fill="rgba(0,200,180,0.7)"/>
-            </g>
-
-            <!-- Node 3: 90° — right  (special: CircuLogic contribution) -->
-            <g class="hero-node">
-              <circle cx="360" cy="230" r="11" fill="rgba(0,200,180,0.25)" stroke="#00C8B4" stroke-width="2">
-                <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="0.3s"/>
-              </circle>
-              <circle cx="360" cy="230" r="4.5" fill="#00C8B4"/>
-            </g>
-
-            <!-- Node 4: 135° -->
-            <g class="hero-node">
-              <circle cx="321.9" cy="321.9" r="9" fill="rgba(0,200,180,0.1)" stroke="rgba(0,200,180,0.5)" stroke-width="1.5"/>
-              <circle cx="321.9" cy="321.9" r="3.5" fill="rgba(0,200,180,0.7)"/>
-            </g>
-
-            <!-- Node 5: 180° — bottom (special: CircuLogic contribution) -->
-            <g class="hero-node">
-              <circle cx="230" cy="360" r="11" fill="rgba(0,200,180,0.25)" stroke="#00C8B4" stroke-width="2">
-                <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite" begin="0.6s"/>
-              </circle>
-              <circle cx="230" cy="360" r="4.5" fill="#00C8B4"/>
-            </g>
-
-            <!-- Node 6: 225° -->
-            <g class="hero-node">
-              <circle cx="138.1" cy="321.9" r="9" fill="rgba(0,200,180,0.1)" stroke="rgba(0,200,180,0.5)" stroke-width="1.5"/>
-              <circle cx="138.1" cy="321.9" r="3.5" fill="rgba(0,200,180,0.7)"/>
-            </g>
-
-            <!-- Node 7: 270° — left -->
-            <g class="hero-node">
-              <circle cx="100" cy="230" r="9" fill="rgba(0,200,180,0.1)" stroke="rgba(0,200,180,0.5)" stroke-width="1.5"/>
-              <circle cx="100" cy="230" r="3.5" fill="rgba(0,200,180,0.7)"/>
-            </g>
-
-            <!-- Node 8: 315° (special: CircuLogic contribution) -->
-            <g class="hero-node">
-              <circle cx="138.1" cy="138.1" r="11" fill="rgba(0,200,180,0.25)" stroke="#00C8B4" stroke-width="2">
-                <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="1s"/>
-              </circle>
-              <circle cx="138.1" cy="138.1" r="4.5" fill="#00C8B4"/>
-            </g>
-
-            <!-- Cross lines suggesting data connections -->
-            <line x1="230" y1="100" x2="360" y2="230" stroke="rgba(0,200,180,0.08)" stroke-width="1"/>
-            <line x1="360" y1="230" x2="230" y2="360" stroke="rgba(0,200,180,0.08)" stroke-width="1"/>
-            <line x1="230" y1="360" x2="100" y2="230" stroke="rgba(0,200,180,0.08)" stroke-width="1"/>
-            <line x1="100" y1="230" x2="230" y2="100" stroke="rgba(0,200,180,0.08)" stroke-width="1"/>
-
-            <defs>
-              <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%" stop-color="#00C8B4" stop-opacity="0"/>
-                <stop offset="60%" stop-color="#00C8B4" stop-opacity="0.8"/>
-                <stop offset="100%" stop-color="#00C8B4" stop-opacity="0.2"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+          <!-- Labels for hero — small, clean -->
+          <text x="220" y="58" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="9" fill="#7A7A72">Policy</text>
+          <text x="390" y="224" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="9" fill="#8B9D3B" font-weight="600">Score ✦</text>
+          <text x="90" y="106" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="9" fill="#8B9D3B" font-weight="600">Feedback ✦</text>
+          <text x="50" y="244" text-anchor="end" font-family="Source Sans 3,sans-serif" font-size="9" fill="#7A7A72">Disposition</text>
+        </svg>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════════
-     PROBLEM
+     SOCIAL PROOF STRIP
+     ════════════════════════════════════════════ -->
+<!-- Replace placeholder logo areas with actual client logos when available -->
+<section id="social-proof">
+  <div class="container">
+    <p class="proof-text reveal">Trusted by retail and ecommerce teams managing returns intelligence</p>
+    <div class="proof-logos reveal reveal-d1">
+      <div class="proof-logo">Brand Partner</div>
+      <div class="proof-logo">Brand Partner</div>
+      <div class="proof-logo">Brand Partner</div>
+      <div class="proof-logo">Brand Partner</div>
+      <div class="proof-logo">Brand Partner</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════
+     THE PROBLEM
      ════════════════════════════════════════════ -->
 <section id="problem">
   <div class="container">
@@ -231,7 +172,7 @@
     </div>
 
     <div class="problem-grid">
-      <div class="problem-card reveal reveal-delay-1">
+      <div class="problem-card reveal reveal-d1">
         <div class="card-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
@@ -239,10 +180,10 @@
         </div>
         <div class="card-stat">–$890B</div>
         <h3 class="card-title">Margin Erosion</h3>
-        <p class="card-text">Every blanket return policy treats your best customer the same as your most expensive one. The cost difference between those two customers is invisible in your P&amp;L — until CircuLogic makes it visible.</p>
+        <p class="card-text">Every blanket return policy treats your best customer the same as your most expensive one. The cost difference is invisible in your P&amp;L — until CircuLogic makes it visible.</p>
       </div>
 
-      <div class="problem-card reveal reveal-delay-2">
+      <div class="problem-card reveal reveal-d2">
         <div class="card-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
             <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
@@ -250,181 +191,134 @@
         </div>
         <div class="card-stat">3.4×</div>
         <h3 class="card-title">Behavioral Reward</h3>
-        <p class="card-text">Serial returners exploit generous policies designed for loyal customers. The top 5% of return-risk customers generate 3.4× the return cost of the bottom 50% — and your policy can't tell them apart.</p>
+        <p class="card-text">Serial returners exploit generous policies designed for loyal customers. The top 5% of return-risk customers generate 3.4× the cost of the bottom 50%.</p>
       </div>
 
-      <div class="problem-card reveal reveal-delay-3">
+      <div class="problem-card reveal reveal-d3">
         <div class="card-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-            <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
           </svg>
         </div>
-        <div class="card-stat">0/5</div>
+        <div class="card-stat">0 / 5</div>
         <h3 class="card-title">Blind Spots</h3>
-        <p class="card-text">Without risk scoring, retailers have no visibility into which customers and products are destroying margin. Standard returns analytics tells you what happened — CircuLogic tells you what's about to happen.</p>
+        <p class="card-text">Without risk scoring, retailers have no visibility into which customers and products destroy margin. Standard analytics tells you what happened — CircuLogic tells you what's about to happen.</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ════════════════════════════════════════════
-     SOLUTION — CLOSED LOOP
+     THE SOLUTION — CLOSED LOOP
      ════════════════════════════════════════════ -->
 <section id="solution">
   <div class="container">
     <div class="solution-header reveal">
       <span class="section-label">The Solution</span>
-      <h2 class="section-title">A Complete Intelligence Loop<br>Across the Full Return Lifecycle</h2>
+      <h2 class="section-title">A Complete Intelligence Loop</h2>
       <p class="section-sub">Eight stages. Continuous learning. Zero marginal cost at query time.</p>
     </div>
 
     <div class="loop-container reveal">
-      <!-- Interactive closed-loop SVG diagram -->
-      <svg class="loop-diagram-svg" viewBox="0 0 680 680" fill="none" xmlns="http://www.w3.org/2000/svg" id="loop-diagram" role="img" aria-label="CircuLogic 8-stage closed loop diagram">
+      <svg class="loop-diagram-svg" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" id="loop-diagram" role="img" aria-label="CircuLogic 8-stage closed loop diagram">
 
-        <!-- Background rings -->
-        <circle cx="340" cy="340" r="290" stroke="rgba(0,200,180,0.04)" stroke-width="1" stroke-dasharray="6 4"/>
-        <circle cx="340" cy="340" r="255" stroke="rgba(0,200,180,0.06)" stroke-width="1"/>
-        <circle cx="340" cy="340" r="220" stroke="rgba(0,200,180,0.12)" stroke-width="1.5"/>
-
-        <!-- Orbit ring with animated dash -->
-        <circle cx="340" cy="340" r="220" stroke="rgba(0,200,180,0.18)" stroke-width="2"/>
-        <circle cx="340" cy="340" r="220"
-          stroke="url(#loopSweep)" stroke-width="4"
-          stroke-dasharray="120 1263" stroke-dashoffset="0">
-          <animateTransform attributeName="transform" type="rotate"
-            from="0 340 340" to="360 340 340" dur="12s" repeatCount="indefinite"/>
+        <!-- Background ring -->
+        <circle cx="320" cy="320" r="265" stroke="#C8D5B9" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="1.5" opacity="0.2"/>
+        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="2.5" stroke-dasharray="100 1283" stroke-linecap="round" opacity="0.4">
+          <animateTransform attributeName="transform" type="rotate" from="0 320 320" to="360 320 320" dur="12s" repeatCount="indefinite"/>
         </circle>
 
         <!-- Center -->
-        <circle cx="340" cy="340" r="70" fill="rgba(0,200,180,0.04)" stroke="rgba(0,200,180,0.2)" stroke-width="1.5"/>
-        <circle cx="340" cy="340" r="48" fill="rgba(0,200,180,0.07)" stroke="rgba(0,200,180,0.35)" stroke-width="1"/>
-        <text x="340" y="334" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" fill="#00C8B4" letter-spacing="2.5">CLOSED</text>
-        <text x="340" y="348" text-anchor="middle" font-family="Space Mono,monospace" font-size="8.5" fill="#00C8B4" letter-spacing="2.5">LOOP</text>
-        <text x="340" y="362" text-anchor="middle" font-family="Space Mono,monospace" font-size="7" fill="rgba(0,200,180,0.5)" letter-spacing="1">v2.0</text>
+        <circle cx="320" cy="320" r="65" fill="#F7F5F2" stroke="#C8D5B9" stroke-width="1.5"/>
+        <circle cx="320" cy="320" r="45" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="1" opacity="0.6"/>
+        <text x="320" y="316" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#2D5016" letter-spacing="2">CLOSED</text>
+        <text x="320" y="328" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#2D5016" letter-spacing="2">LOOP</text>
 
         <!--
-          Node positions (radius=220, center=340,340):
-          Node n at angle θ = -90° + (n-1)*45°
-          x = 340 + 220*cos(θ), y = 340 + 220*sin(θ)
-
-          1: θ=-90°  → (340, 120)
-          2: θ=-45°  → (495.6, 184.4)
-          3: θ=0°    → (560, 340)       ** CircuLogic
-          4: θ=45°   → (495.6, 495.6)
-          5: θ=90°   → (340, 560)       ** CircuLogic
-          6: θ=135°  → (184.4, 495.6)
-          7: θ=180°  → (120, 340)
-          8: θ=225°  → (184.4, 184.4)   ** CircuLogic
+          Nodes at r=220, center=320
+          θ = -90° + (n-1)*45°
+          1:(320,100) 2:(475.6,164.4) 3:(540,320) 4:(475.6,475.6)
+          5:(320,540) 6:(164.4,475.6) 7:(100,320) 8:(164.4,164.4)
         -->
 
-        <!-- Connecting spokes (subtle) -->
-        <line x1="340" y1="120"   x2="560" y2="340"   stroke="rgba(0,200,180,0.06)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="560" y1="340"   x2="340" y2="560"   stroke="rgba(0,200,180,0.06)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="340" y1="560"   x2="120" y2="340"   stroke="rgba(0,200,180,0.06)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="120" y1="340"   x2="340" y2="120"   stroke="rgba(0,200,180,0.06)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="495.6" y1="184.4" x2="184.4" y2="495.6" stroke="rgba(0,200,180,0.04)" stroke-width="1" stroke-dasharray="3 5"/>
-        <line x1="495.6" y1="495.6" x2="184.4" y2="184.4" stroke="rgba(0,200,180,0.04)" stroke-width="1" stroke-dasharray="3 5"/>
+        <!-- Subtle spoke lines -->
+        <line x1="320" y1="100" x2="540" y2="320" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+        <line x1="540" y1="320" x2="320" y2="540" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+        <line x1="320" y1="540" x2="100" y2="320" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+        <line x1="100" y1="320" x2="320" y2="100" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
 
-        <!-- STAGE NODES — standard -->
-        <!-- Stage 1: Policy Generation -->
-        <g class="loop-node" data-stage="1" data-title="Policy Generation" data-desc="Retailer preferences shape return window, refund percentage, and restocking fee. The starting configuration for every customer interaction." style="cursor:pointer">
-          <circle cx="340" cy="120" r="26" fill="rgba(13,22,32,0.9)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5" class="node-ring"/>
-          <circle cx="340" cy="120" r="14" fill="rgba(0,200,180,0.15)" stroke="rgba(0,200,180,0.7)" stroke-width="1.5"/>
-          <text x="340" y="124.5" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">01</text>
-          <text x="340" y="86" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Policy</text>
-          <text x="340" y="100" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Generation</text>
+        <!-- Stage 1 -->
+        <g class="loop-node" data-stage="1" data-title="Policy Generation" data-desc="Retailer preferences shape return window, refund percentage, and restocking fee — the starting configuration for every customer interaction." style="cursor:pointer">
+          <circle cx="320" cy="100" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
+          <text x="320" y="104" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">01</text>
+          <text x="320" y="72" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Policy Generation</text>
         </g>
 
-        <!-- Stage 2: Transaction Capture -->
-        <g class="loop-node" data-stage="2" data-title="Transaction Capture" data-desc="Every order records product, customer, channel, and value context. The raw material for every score and prediction downstream." style="cursor:pointer">
-          <circle cx="495.6" cy="184.4" r="26" fill="rgba(13,22,32,0.9)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5" class="node-ring"/>
-          <circle cx="495.6" cy="184.4" r="14" fill="rgba(0,200,180,0.15)" stroke="rgba(0,200,180,0.7)" stroke-width="1.5"/>
-          <text x="495.6" y="188.9" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">02</text>
-          <text x="543" y="164" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Transaction</text>
-          <text x="543" y="178" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Capture</text>
+        <!-- Stage 2 -->
+        <g class="loop-node" data-stage="2" data-title="Transaction Capture" data-desc="Every order records product, customer, channel, and value context — the raw material for every score and prediction downstream." style="cursor:pointer">
+          <circle cx="475.6" cy="164.4" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
+          <text x="475.6" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">02</text>
+          <text x="520" y="145" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Transaction</text>
+          <text x="520" y="158" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Capture</text>
         </g>
 
-        <!-- Stage 3: Score Building — HIGHLIGHTED -->
-        <g class="loop-node loop-node-highlight" data-stage="3" data-title="Score Building" data-desc="CRRS, RAF-P, and C scores maintained continuously. CircuLogic's proprietary actuarial engine builds and updates five risk dimensions on every event." style="cursor:pointer">
-          <circle cx="560" cy="340" r="30" fill="rgba(0,200,180,0.12)" stroke="#00C8B4" stroke-width="2" class="node-ring">
-            <animate attributeName="r" values="30;33;30" dur="3s" repeatCount="indefinite"/>
-          </circle>
-          <circle cx="560" cy="340" r="16" fill="rgba(0,200,180,0.3)" stroke="#00C8B4" stroke-width="2"/>
-          <text x="560" y="344.5" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">03</text>
-          <text x="614" y="334" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#00C8B4">Score</text>
-          <text x="614" y="348" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#00C8B4">Building ✦</text>
+        <!-- Stage 3 — HIGHLIGHTED -->
+        <g class="loop-node" data-stage="3" data-title="Score Building" data-desc="CRRS, RAF-P, and C scores maintained continuously. CircuLogic's proprietary actuarial engine builds and updates five risk dimensions on every event." style="cursor:pointer">
+          <circle cx="540" cy="320" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
+          <text x="540" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">03</text>
+          <text x="588" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Score</text>
+          <text x="588" y="327" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Building ✦</text>
         </g>
 
-        <!-- Stage 4: Return Initiation -->
+        <!-- Stage 4 -->
         <g class="loop-node" data-stage="4" data-title="Return Initiation" data-desc="Customer initiates return; transit window opens (3–7 days). This window is the intelligence opportunity — CircuLogic uses every minute of it." style="cursor:pointer">
-          <circle cx="495.6" cy="495.6" r="26" fill="rgba(13,22,32,0.9)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5" class="node-ring"/>
-          <circle cx="495.6" cy="495.6" r="14" fill="rgba(0,200,180,0.15)" stroke="rgba(0,200,180,0.7)" stroke-width="1.5"/>
-          <text x="495.6" y="500.1" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">04</text>
-          <text x="543" y="515" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Return</text>
-          <text x="543" y="529" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Initiation</text>
+          <circle cx="475.6" cy="475.6" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
+          <text x="475.6" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">04</text>
+          <text x="520" y="498" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Return</text>
+          <text x="520" y="511" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Initiation</text>
         </g>
 
-        <!-- Stage 5: Pre-Computation — HIGHLIGHTED -->
-        <g class="loop-node loop-node-highlight" data-stage="5" data-title="Pre-Computation" data-desc="All signals assembled during transit at zero marginal cost. CircuLogic completes the full risk analysis before the package arrives — no latency at warehouse." style="cursor:pointer">
-          <circle cx="340" cy="560" r="30" fill="rgba(0,200,180,0.12)" stroke="#00C8B4" stroke-width="2" class="node-ring">
-            <animate attributeName="r" values="30;33;30" dur="2.8s" repeatCount="indefinite" begin="0.5s"/>
-          </circle>
-          <circle cx="340" cy="560" r="16" fill="rgba(0,200,180,0.3)" stroke="#00C8B4" stroke-width="2"/>
-          <text x="340" y="564.5" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">05</text>
-          <text x="340" y="606" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#00C8B4">Pre-Computation ✦</text>
+        <!-- Stage 5 — HIGHLIGHTED -->
+        <g class="loop-node" data-stage="5" data-title="Pre-Computation" data-desc="All signals assembled during transit at zero marginal cost. Full risk analysis completes before the package arrives — no latency at warehouse." style="cursor:pointer">
+          <circle cx="320" cy="540" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
+          <text x="320" y="544" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">05</text>
+          <text x="320" y="580" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Pre-Computation ✦</text>
         </g>
 
-        <!-- Stage 6: Warehouse Receipt -->
-        <g class="loop-node" data-stage="6" data-title="Warehouse Receipt &amp; Inspection" data-desc="Physical condition confirmed, disposition recommendation finalized. The CircuLogic system delivers a complete action plan — the warehouse simply executes." style="cursor:pointer">
-          <circle cx="184.4" cy="495.6" r="26" fill="rgba(13,22,32,0.9)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5" class="node-ring"/>
-          <circle cx="184.4" cy="495.6" r="14" fill="rgba(0,200,180,0.15)" stroke="rgba(0,200,180,0.7)" stroke-width="1.5"/>
-          <text x="184.4" y="500.1" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">06</text>
-          <text x="133" y="515" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Warehouse</text>
-          <text x="133" y="529" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Receipt</text>
+        <!-- Stage 6 -->
+        <g class="loop-node" data-stage="6" data-title="Warehouse Receipt &amp; Inspection" data-desc="Physical condition confirmed, disposition recommendation finalized. CircuLogic delivers a complete action plan — the warehouse simply executes." style="cursor:pointer">
+          <circle cx="164.4" cy="475.6" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
+          <text x="164.4" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">06</text>
+          <text x="115" y="498" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Warehouse</text>
+          <text x="115" y="511" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Receipt</text>
         </g>
 
-        <!-- Stage 7: Disposition Actioned -->
+        <!-- Stage 7 -->
         <g class="loop-node" data-stage="7" data-title="Disposition Actioned" data-desc="Item routed to the optimal recovery channel — resale, refurbishment, liquidation, or donation. The right decision for this item, this condition, this market moment." style="cursor:pointer">
-          <circle cx="120" cy="340" r="26" fill="rgba(13,22,32,0.9)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5" class="node-ring"/>
-          <circle cx="120" cy="340" r="14" fill="rgba(0,200,180,0.15)" stroke="rgba(0,200,180,0.7)" stroke-width="1.5"/>
-          <text x="120" y="344.5" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">07</text>
-          <text x="68" y="334" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Disposition</text>
-          <text x="68" y="348" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="600" fill="rgba(232,237,245,0.75)">Actioned</text>
+          <circle cx="100" cy="320" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
+          <text x="100" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">07</text>
+          <text x="55" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Disposition</text>
+          <text x="55" y="327" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Actioned</text>
         </g>
 
-        <!-- Stage 8: Outcome Feedback — HIGHLIGHTED -->
-        <g class="loop-node loop-node-highlight" data-stage="8" data-title="Outcome Feedback" data-desc="Actual recovery value feeds back into scores, closing the loop. Every return makes the model smarter — CircuLogic's unique actuarial feedback architecture." style="cursor:pointer">
-          <circle cx="184.4" cy="184.4" r="30" fill="rgba(0,200,180,0.12)" stroke="#00C8B4" stroke-width="2" class="node-ring">
-            <animate attributeName="r" values="30;33;30" dur="3.2s" repeatCount="indefinite" begin="1s"/>
-          </circle>
-          <circle cx="184.4" cy="184.4" r="16" fill="rgba(0,200,180,0.3)" stroke="#00C8B4" stroke-width="2"/>
-          <text x="184.4" y="188.9" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#00C8B4">08</text>
-          <text x="133" y="164" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#00C8B4">Outcome ✦</text>
-          <text x="133" y="178" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" font-weight="700" fill="#00C8B4">Feedback</text>
+        <!-- Stage 8 — HIGHLIGHTED -->
+        <g class="loop-node" data-stage="8" data-title="Outcome Feedback" data-desc="Actual recovery value feeds back into scores, closing the loop. Every return makes the model smarter — CircuLogic's unique actuarial feedback architecture." style="cursor:pointer">
+          <circle cx="164.4" cy="164.4" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
+          <text x="164.4" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">08</text>
+          <text x="115" y="142" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Outcome ✦</text>
+          <text x="115" y="155" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Feedback</text>
         </g>
-
-        <!-- Direction arrows on the orbit ring -->
-        <path d="M370 121 L360 118 L358 129" fill="none" stroke="rgba(0,200,180,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M559 310 L560 320 L551 316" fill="none" stroke="rgba(0,200,180,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-
-        <defs>
-          <linearGradient id="loopSweep" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#00C8B4" stop-opacity="0"/>
-            <stop offset="50%" stop-color="#00C8B4" stop-opacity="0.9"/>
-            <stop offset="100%" stop-color="#00C8B4" stop-opacity="0.1"/>
-          </linearGradient>
-        </defs>
       </svg>
 
-      <!-- Tooltip overlay -->
       <div class="stage-tooltip" id="stage-tooltip" role="tooltip" aria-live="polite">
         <div class="tooltip-num" id="tt-num">STAGE 01</div>
-        <div class="tooltip-title" id="tt-title">Stage Title</div>
-        <div class="tooltip-desc" id="tt-desc">Description text here.</div>
+        <div class="tooltip-title" id="tt-title"></div>
+        <div class="tooltip-desc" id="tt-desc"></div>
       </div>
     </div>
+
+    <p class="loop-note reveal">Stages 3, 5, and 8 represent CircuLogic's unique intelligence contribution</p>
   </div>
 </section>
 
@@ -439,53 +333,39 @@
       <p class="section-sub">Every score is maintained continuously, updated on every order and return event, and available at zero marginal cost at query time.</p>
     </div>
 
-    <div class="metrics-grid" style="margin-top: 3rem;">
-
-      <div class="metric-card reveal reveal-delay-1"
-           data-impact="→ Drives policy generation and return window decisions"
-           style="--score: 82%">
+    <div class="metrics-grid">
+      <div class="metric-card reveal reveal-d1" style="--score: 82%">
         <div class="metric-abbr">CRRS</div>
         <div class="metric-name">Customer Return Risk Score</div>
         <p class="metric-desc">Scores every customer on return likelihood and behavioral risk. 0 to 100. Updated on every order and return event.</p>
         <div class="score-gauge"><div class="score-bar"></div></div>
       </div>
-
-      <div class="metric-card reveal reveal-delay-2"
-           data-impact="→ Separates revenue from profitability at the customer level"
-           style="--score: 65%">
+      <div class="metric-card reveal reveal-d2" style="--score: 65%">
         <div class="metric-abbr">C-Score</div>
         <div class="metric-name">Customer Value Score</div>
         <p class="metric-desc">True net customer value after return costs. Separates profitable customers from high-revenue margin destroyers.</p>
         <div class="score-gauge"><div class="score-bar"></div></div>
       </div>
-
-      <div class="metric-card reveal reveal-delay-3"
-           data-impact="→ Powers the pre-computation engine at transit time"
-           style="--score: 74%">
+      <div class="metric-card reveal reveal-d3" style="--score: 74%">
         <div class="metric-abbr">E[L]</div>
         <div class="metric-name">Expected Loss</div>
         <p class="metric-desc">The dollar cost of this customer's next return — computed before it happens. Drives every policy decision in the engine.</p>
         <div class="score-gauge"><div class="score-bar"></div></div>
       </div>
-
-      <div class="metric-card reveal reveal-delay-4"
-           data-impact="→ Catches occasional-but-expensive returners base rate misses"
-           style="--score: 58%">
+    </div>
+    <div class="metrics-grid-bottom">
+      <div class="metric-card reveal reveal-d4" style="--score: 58%">
         <div class="metric-abbr">RAF-C</div>
         <div class="metric-name">Return Adjustment Factor (Customer)</div>
         <p class="metric-desc">Customer-level risk multiplier. Catches the occasional-but-expensive returner that the base rate systematically misses.</p>
         <div class="score-gauge"><div class="score-bar"></div></div>
       </div>
-
-      <div class="metric-card reveal reveal-delay-5"
-           data-impact="→ Product risk independent of buyer behavior"
-           style="--score: 70%">
+      <div class="metric-card reveal reveal-d5" style="--score: 70%">
         <div class="metric-abbr">RAF-P</div>
         <div class="metric-name">Return Adjustment Factor (Product)</div>
         <p class="metric-desc">Product-level return risk independent of who is buying. Some products are inherently high risk regardless of customer history.</p>
         <div class="score-gauge"><div class="score-bar"></div></div>
       </div>
-
     </div>
   </div>
 </section>
@@ -502,29 +382,24 @@
 
     <div class="flow-steps reveal">
       <div class="flow-step">
-        <div class="step-num">Step 01</div>
+        <div class="step-num">01</div>
         <div class="step-title">Score</div>
-        <p class="step-desc">Evaluate customer and product risk across five independent dimensions. CRRS, C-Score, E[L], RAF-C, and RAF-P are each maintained continuously.</p>
+        <p class="step-desc">Evaluate customer and product risk across five independent dimensions. CRRS, C-Score, E[L], RAF-C, and RAF-P — each maintained continuously.</p>
       </div>
-
       <div class="flow-arrow" aria-hidden="true">→</div>
-
       <div class="flow-step">
-        <div class="step-num">Step 02</div>
+        <div class="step-num">02</div>
         <div class="step-title">Predict</div>
-        <p class="step-desc">Compute Expected Loss before the return occurs. Pre-computation during the transit window means zero added latency at the point of warehouse decision.</p>
+        <p class="step-desc">Compute Expected Loss before the return occurs. Pre-computation during the transit window means zero added latency at the point of decision.</p>
       </div>
-
       <div class="flow-arrow" aria-hidden="true">→</div>
-
       <div class="flow-step">
-        <div class="step-num">Step 03</div>
+        <div class="step-num">03</div>
         <div class="step-title">Act</div>
         <p class="step-desc">Generate an individualized return policy automatically. Return window, refund percentage, and restocking fee — all optimized for this customer, this product, this moment.</p>
       </div>
     </div>
 
-    <!-- Policy comparison cards -->
     <div class="policy-compare reveal">
       <div class="policy-card">
         <div class="policy-header">
@@ -532,30 +407,14 @@
           <span class="policy-header-title">LOW RISK CUSTOMER — ILLUSTRATIVE OUTPUT</span>
         </div>
         <div class="policy-body">
-          <div class="policy-row">
-            <span class="policy-key">CRRS</span>
-            <span class="policy-val accent">18 / 100</span>
+          <div class="policy-row"><span class="policy-key">CRRS</span><span class="policy-val green">18 / 100</span></div>
+          <div class="policy-row"><span class="policy-key">E[L]</span><span class="policy-val green">$42.00</span></div>
+          <div class="policy-row"><span class="policy-key">RAF-C</span><span class="policy-val">0.72×</span></div>
+          <div class="policy-row" style="margin-top:8px; padding-top:12px; border-top: 2px solid #C8D5B9;">
+            <span class="policy-key">RETURN WINDOW</span><span class="policy-val green">45 days</span>
           </div>
-          <div class="policy-row">
-            <span class="policy-key">E[L]</span>
-            <span class="policy-val accent">$42.00</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">RAF-C</span>
-            <span class="policy-val">0.72×</span>
-          </div>
-          <div class="policy-row" style="margin-top:8px; padding-top:16px; border-top: 1px solid rgba(0,200,180,0.15);">
-            <span class="policy-key">RETURN WINDOW</span>
-            <span class="policy-val accent">45 days</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">RESTOCKING FEE</span>
-            <span class="policy-val accent">0%</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">REFUND</span>
-            <span class="policy-val accent">100%</span>
-          </div>
+          <div class="policy-row"><span class="policy-key">RESTOCKING FEE</span><span class="policy-val green">0%</span></div>
+          <div class="policy-row"><span class="policy-key">REFUND</span><span class="policy-val green">100%</span></div>
         </div>
       </div>
 
@@ -565,30 +424,14 @@
           <span class="policy-header-title">HIGH RISK CUSTOMER — ILLUSTRATIVE OUTPUT</span>
         </div>
         <div class="policy-body">
-          <div class="policy-row">
-            <span class="policy-key">CRRS</span>
-            <span class="policy-val danger">87 / 100</span>
+          <div class="policy-row"><span class="policy-key">CRRS</span><span class="policy-val amber">87 / 100</span></div>
+          <div class="policy-row"><span class="policy-key">E[L]</span><span class="policy-val amber">$298.00</span></div>
+          <div class="policy-row"><span class="policy-key">RAF-C</span><span class="policy-val">2.41×</span></div>
+          <div class="policy-row" style="margin-top:8px; padding-top:12px; border-top: 2px solid rgba(184,134,11,0.2);">
+            <span class="policy-key">RETURN WINDOW</span><span class="policy-val amber">14 days</span>
           </div>
-          <div class="policy-row">
-            <span class="policy-key">E[L]</span>
-            <span class="policy-val danger">$298.00</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">RAF-C</span>
-            <span class="policy-val">2.41×</span>
-          </div>
-          <div class="policy-row" style="margin-top:8px; padding-top:16px; border-top: 1px solid rgba(255,77,109,0.15);">
-            <span class="policy-key">RETURN WINDOW</span>
-            <span class="policy-val danger">14 days</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">RESTOCKING FEE</span>
-            <span class="policy-val danger">20%</span>
-          </div>
-          <div class="policy-row">
-            <span class="policy-key">REFUND</span>
-            <span class="policy-val danger">80%</span>
-          </div>
+          <div class="policy-row"><span class="policy-key">RESTOCKING FEE</span><span class="policy-val amber">20%</span></div>
+          <div class="policy-row"><span class="policy-key">REFUND</span><span class="policy-val amber">80%</span></div>
         </div>
       </div>
     </div>
@@ -607,7 +450,7 @@
     </div>
 
     <div class="integration-cols">
-      <div class="int-col reveal reveal-delay-1">
+      <div class="int-col reveal reveal-d1">
         <div class="int-col-title">Enterprise Retail</div>
         <div class="int-item">Order Management (OMS)</div>
         <div class="int-item">Warehouse Management (WMS)</div>
@@ -616,8 +459,7 @@
         <div class="int-item">Returns Management Systems</div>
         <div class="int-item">EDI &amp; Carrier Integrations</div>
       </div>
-
-      <div class="int-col reveal reveal-delay-2">
+      <div class="int-col reveal reveal-d2">
         <div class="int-col-title">Ecommerce Native</div>
         <div class="int-item">Shopify Native Integration</div>
         <div class="int-item">API-First Design (REST + Webhooks)</div>
@@ -626,8 +468,7 @@
         <div class="int-item">Real-Time Event Streaming</div>
         <div class="int-item">Custom Storefront Connectors</div>
       </div>
-
-      <div class="int-col reveal reveal-delay-3">
+      <div class="int-col reveal reveal-d3">
         <div class="int-col-title">Intelligence Sources</div>
         <div class="int-item">eBay Resale Pricing API</div>
         <div class="int-item">Secondary Market Pricing Data</div>
@@ -638,22 +479,12 @@
       </div>
     </div>
 
-    <!-- Data flow diagram -->
-    <div class="data-flow reveal" aria-label="Data flow: Your Systems to CircuLogic to Individualized Policy">
-      <div class="flow-node">
-        <div style="font-size:0.65rem; color: var(--text-muted); letter-spacing:0.1em; margin-bottom:6px;">INPUT</div>
-        Your Systems
-      </div>
+    <div class="data-flow reveal">
+      <div class="flow-node"><div style="font-size:0.65rem;color:var(--text-light);letter-spacing:0.1em;margin-bottom:4px;">INPUT</div>Your Systems</div>
       <div class="flow-connector" aria-hidden="true">→</div>
-      <div class="flow-node engine">
-        <div style="font-size:0.65rem; letter-spacing:0.1em; margin-bottom:6px; opacity:0.7;">ENGINE</div>
-        CircuLogic Intelligence
-      </div>
+      <div class="flow-node engine"><div style="font-size:0.65rem;letter-spacing:0.1em;margin-bottom:4px;opacity:0.7;">ENGINE</div>CircuLogic Intelligence</div>
       <div class="flow-connector" aria-hidden="true">→</div>
-      <div class="flow-node">
-        <div style="font-size:0.65rem; color: var(--text-muted); letter-spacing:0.1em; margin-bottom:6px;">OUTPUT</div>
-        Individualized Policy
-      </div>
+      <div class="flow-node"><div style="font-size:0.65rem;color:var(--text-light);letter-spacing:0.1em;margin-bottom:4px;">OUTPUT</div>Individualized Policy</div>
     </div>
 
     <div class="timeline-callout reveal">
@@ -674,45 +505,19 @@
     </div>
 
     <div class="compare-table-wrap reveal">
-      <table class="compare-table" role="table" aria-label="CircuLogic vs generic returns management comparison">
-        <thead>
-          <tr>
-            <th scope="col">Capability</th>
-            <th scope="col" class="cl-col">CircuLogic</th>
-            <th scope="col" class="generic-col">Generic Returns Tools</th>
-          </tr>
-        </thead>
+      <table class="compare-table" role="table">
+        <thead><tr>
+          <th scope="col">Capability</th>
+          <th scope="col" class="cl-col">CircuLogic</th>
+          <th scope="col" class="generic-col">Generic Returns Tools</th>
+        </tr></thead>
         <tbody>
-          <tr>
-            <td>Policy Type</td>
-            <td><span class="check-yes">Individualized per customer &amp; product</span></td>
-            <td><span class="check-no">One-size-fits-all blanket policy</span></td>
-          </tr>
-          <tr>
-            <td>Customer Treatment</td>
-            <td><span class="check-yes">Differentiated by risk score and value</span></td>
-            <td><span class="check-no">Uniform regardless of behavior</span></td>
-          </tr>
-          <tr>
-            <td>Risk Scoring</td>
-            <td><span class="check-yes">Five-dimensional actuarial model</span></td>
-            <td><span class="check-no">None or basic rule-based flags</span></td>
-          </tr>
-          <tr>
-            <td>Expected Loss</td>
-            <td><span class="check-yes">Computed before return occurs</span></td>
-            <td><span class="check-no">Not modelled — reactive only</span></td>
-          </tr>
-          <tr>
-            <td>Disposition Intelligence</td>
-            <td><span class="check-yes">Market-aware channel optimization</span></td>
-            <td><span class="check-no">Manual routing or basic rules</span></td>
-          </tr>
-          <tr>
-            <td>Learning Over Time</td>
-            <td><span class="check-yes">Continuous actuarial feedback loop</span></td>
-            <td><span class="check-no">Static — no model improvement</span></td>
-          </tr>
+          <tr><td>Policy Type</td><td><span class="check-yes">Individualized per customer &amp; product</span></td><td><span class="check-no">One-size-fits-all blanket policy</span></td></tr>
+          <tr><td>Customer Treatment</td><td><span class="check-yes">Differentiated by risk score and value</span></td><td><span class="check-no">Uniform regardless of behavior</span></td></tr>
+          <tr><td>Risk Scoring</td><td><span class="check-yes">Five-dimensional actuarial model</span></td><td><span class="check-no">None or basic rule-based flags</span></td></tr>
+          <tr><td>Expected Loss</td><td><span class="check-yes">Computed before return occurs</span></td><td><span class="check-no">Not modelled — reactive only</span></td></tr>
+          <tr><td>Disposition Intelligence</td><td><span class="check-yes">Market-aware channel optimization</span></td><td><span class="check-no">Manual routing or basic rules</span></td></tr>
+          <tr><td>Learning Over Time</td><td><span class="check-yes">Continuous actuarial feedback loop</span></td><td><span class="check-no">Static — no model improvement</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -724,45 +529,26 @@
 </section>
 
 <!-- ════════════════════════════════════════════
-     CONTACT / REQUEST DEMO
+     CONTACT
      ════════════════════════════════════════════ -->
 <section id="contact">
   <div class="container">
-    <div class="reveal" style="text-align:center; margin-bottom: var(--space-12);">
+    <div class="contact-header reveal">
       <span class="section-label">Request Demo</span>
       <h2 class="section-title">See CircuLogic With<br>Your Own Data</h2>
-      <p class="section-sub" style="margin: 0 auto;">We run your returns data through the CircuLogic engine and show you your E[L] exposure, your highest-risk customers, and your margin at risk — before you commit to anything.</p>
+      <p class="section-sub">We run your returns data through the CircuLogic engine and show you your E[L] exposure, your highest-risk customers, and your margin at risk — before you commit to anything.</p>
     </div>
 
     <div class="contact-inner">
-      <!-- Form -->
       <div class="contact-form-wrap reveal">
         <!--
-          FORM SETUP INSTRUCTIONS:
-          ════════════════════════════════════════════
-          This form uses Formspree for static-site form handling.
-          To activate:
-          1. Go to https://formspree.io and create a free account
-          2. Create a new form, copy your form endpoint (e.g. https://formspree.io/f/xAbCdEfG)
-          3. Replace the action attribute value below with your Formspree endpoint
-          4. Remove the onsubmit handler if you want Formspree's default redirect instead of the JS thank-you state
-
-          Alternatively, to use a mailto fallback only (no form submission tracking):
-          Change action to: "mailto:sales@circulogic.ai"
-          And method to: "post"
-          Add enctype="text/plain"
-
-          Current: uses JS preventDefault for the animated thank-you state,
-          then would POST to Formspree endpoint in production.
-          ════════════════════════════════════════════
+          FORM SETUP: Replace REPLACE_WITH_YOUR_FORMSPREE_ID with your
+          Formspree endpoint (e.g. https://formspree.io/f/xAbCdEfG).
+          See https://formspree.io — free tier handles 50 submissions/month.
         -->
-        <form id="contact-form"
-              action="https://formspree.io/f/xnjgjpkl"
-              method="POST"
-              novalidate>
-
+        <form id="contact-form" action="https://formspree.io/f/REPLACE_WITH_YOUR_FORMSPREE_ID" method="POST" novalidate>
           <div id="form-fields">
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap: var(--space-4);">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);">
               <div class="form-group">
                 <label class="form-label" for="f-name">Name</label>
                 <input class="form-input" type="text" id="f-name" name="name" placeholder="Your full name" required />
@@ -772,12 +558,10 @@
                 <input class="form-input" type="text" id="f-company" name="company" placeholder="Company name" required />
               </div>
             </div>
-
             <div class="form-group">
               <label class="form-label" for="f-email">Email</label>
               <input class="form-input" type="email" id="f-email" name="email" placeholder="you@company.com" required />
             </div>
-
             <div class="form-group">
               <label class="form-label" for="f-role">Role</label>
               <select class="form-select" id="f-role" name="role" required>
@@ -788,78 +572,45 @@
                 <option value="other">Other</option>
               </select>
             </div>
-
             <div class="form-group">
-              <label class="form-label" for="f-message">Message <span style="color:var(--text-muted)">(optional)</span></label>
+              <label class="form-label" for="f-message">Message <span style="color:var(--text-light)">(optional)</span></label>
               <textarea class="form-textarea" id="f-message" name="message" placeholder="Tell us about your returns volume, current setup, or any specific questions…" rows="4"></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary form-submit">Request Demo →</button>
           </div>
 
-          <!-- Thank you state (shown on successful submit) -->
           <div class="form-thankyou" id="form-thankyou" aria-live="polite">
             <div class="ty-icon">✓</div>
             <h3>Request Received</h3>
-            <p>Thank you. A member of the CircuLogic team will be in touch within one business day to schedule your data-driven demo session.</p>
+            <p>Thank you. A member of the CircuLogic team will be in touch within one business day.</p>
           </div>
         </form>
       </div>
 
-      <!-- Contact info + decorative element -->
-      <div class="contact-info reveal reveal-delay-2">
+      <div class="contact-info reveal reveal-d2">
         <h3>Start with your data.<br>No commitment required.</h3>
         <p>The CircuLogic demo is substantive — we bring your returns data into the engine and show you real exposure numbers, not a slide deck.</p>
 
         <div class="contact-detail">
           <div class="detail-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
-          <div>
-            <div class="detail-label">Email</div>
-            <div class="detail-value"><a href="mailto:sales@circulogic.ai">sales@circulogic.ai</a></div>
-          </div>
+          <div><div class="detail-label">Email</div><div class="detail-value"><a href="mailto:sales@circulogic.ai">sales@circulogic.ai</a></div></div>
         </div>
 
         <div class="contact-detail">
           <div class="detail-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-              <circle cx="12" cy="10" r="3"/>
-            </svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <div>
-            <div class="detail-label">Address</div>
-            <div class="detail-value">CircuLogic PTE Ltd.<br>Singapore — 247676</div>
-          </div>
+          <div><div class="detail-label">Address</div><div class="detail-value">CircuLogic PTE Ltd.<br>Singapore — 247676</div></div>
         </div>
 
-        <!-- Decorative SVG element -->
-        <div class="contact-geo" aria-hidden="true">
-          <svg viewBox="0 0 300 120" width="300" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <!-- Abstract data bar chart motif -->
-            <rect x="10"  y="70" width="18" height="40" rx="2" fill="rgba(0,200,180,0.12)" stroke="rgba(0,200,180,0.2)" stroke-width="1"/>
-            <rect x="36"  y="45" width="18" height="65" rx="2" fill="rgba(0,200,180,0.18)" stroke="rgba(0,200,180,0.3)" stroke-width="1"/>
-            <rect x="62"  y="55" width="18" height="55" rx="2" fill="rgba(0,200,180,0.14)" stroke="rgba(0,200,180,0.25)" stroke-width="1"/>
-            <rect x="88"  y="30" width="18" height="80" rx="2" fill="rgba(0,200,180,0.22)" stroke="rgba(0,200,180,0.4)" stroke-width="1.5"/>
-            <rect x="114" y="50" width="18" height="60" rx="2" fill="rgba(0,200,180,0.16)" stroke="rgba(0,200,180,0.28)" stroke-width="1"/>
-            <rect x="140" y="20" width="18" height="90" rx="2" fill="rgba(0,200,180,0.28)" stroke="rgba(0,200,180,0.5)" stroke-width="1.5"/>
-            <rect x="166" y="40" width="18" height="70" rx="2" fill="rgba(0,200,180,0.18)" stroke="rgba(0,200,180,0.3)" stroke-width="1"/>
-            <rect x="192" y="60" width="18" height="50" rx="2" fill="rgba(0,200,180,0.12)" stroke="rgba(0,200,180,0.2)" stroke-width="1"/>
-            <rect x="218" y="35" width="18" height="75" rx="2" fill="rgba(0,200,180,0.2)" stroke="rgba(0,200,180,0.35)" stroke-width="1"/>
-            <rect x="244" y="55" width="18" height="55" rx="2" fill="rgba(0,200,180,0.14)" stroke="rgba(0,200,180,0.25)" stroke-width="1"/>
-            <rect x="270" y="45" width="18" height="65" rx="2" fill="rgba(0,200,180,0.18)" stroke="rgba(0,200,180,0.3)" stroke-width="1"/>
-
-            <!-- Trend line -->
-            <polyline points="19,70 45,45 71,55 97,30 123,50 149,20 175,40 201,60 227,35 253,55 279,45"
-              stroke="#00C8B4" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.5" fill="none"/>
-
-            <!-- Score dots on line -->
-            <circle cx="149" cy="20" r="3.5" fill="#00C8B4"/>
-            <circle cx="97"  cy="30" r="2.5" fill="#00C8B4" opacity="0.6"/>
+        <!-- Decorative circular arc motif -->
+        <div style="margin-top:var(--space-10);opacity:0.4;" aria-hidden="true">
+          <svg viewBox="0 0 200 80" width="200" fill="none">
+            <circle cx="100" cy="100" r="80" stroke="#C8D5B9" stroke-width="1.5" stroke-dasharray="6 4"/>
+            <circle cx="100" cy="100" r="60" stroke="#8B9D3B" stroke-width="1" stroke-dasharray="4 6"/>
+            <circle cx="100" cy="100" r="40" stroke="#2D5016" stroke-width="1" opacity="0.4"/>
           </svg>
         </div>
       </div>
@@ -867,7 +618,7 @@
   </div>
 </section>
 
-</main><!-- /main -->
+</main>
 
 <!-- ════════════════════════════════════════════
      FOOTER
@@ -876,13 +627,11 @@
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="#hero" class="nav-logo" style="margin-bottom: var(--space-4); display:inline-flex;">
-          <img class="logo-mark" src="assets/circulogic-icon.svg" alt="CircuLogic icon" />
+        <a href="#hero" class="nav-logo" style="margin-bottom:var(--space-4);display:inline-flex;">
           <span class="logo-text">Circu<span>Logic</span></span>
         </a>
         <div class="footer-tagline">Actuarial Returns Intelligence for Modern Retail</div>
       </div>
-
       <div class="footer-nav">
         <h4>Navigation</h4>
         <a href="#solution">Solution</a>
@@ -892,19 +641,14 @@
         <a href="#why">Why CircuLogic</a>
         <a href="#contact">Contact</a>
       </div>
-
       <div class="footer-contact">
         <h4>Contact</h4>
         <a href="mailto:sales@circulogic.ai">sales@circulogic.ai</a>
-        <p style="color:var(--text-muted); font-size:var(--text-sm); line-height:1.6; margin-top:var(--space-3);">
-          CircuLogic PTE Ltd.<br>Singapore — 247676
-        </p>
+        <p style="color:rgba(255,255,255,0.5);font-size:var(--text-sm);line-height:1.6;margin-top:var(--space-3);">CircuLogic PTE Ltd.<br>Singapore — 247676</p>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p class="footer-copy">© 2026 CircuLogic PTE Ltd. All rights reserved. Confidential and Proprietary.</p>
-      <p class="footer-copy" style="color: var(--text-muted);">Actuarial Returns Intelligence</p>
     </div>
   </div>
 </footer>
