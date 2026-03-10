@@ -103,8 +103,8 @@
           <circle cx="220" cy="220" r="180" stroke="#C8D5B9" stroke-width="1" opacity="0.6"/>
 
           <!-- Main orbit -->
-          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="1.5" opacity="0.25"/>
-          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="2.5" stroke-dasharray="70 842" stroke-linecap="round" opacity="0.5">
+          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="4" opacity="0.7"/>
+          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="5" stroke-dasharray="70 842" stroke-linecap="round" opacity="0.85">
             <animateTransform attributeName="transform" type="rotate" from="0 220 220" to="360 220 220" dur="10s" repeatCount="indefinite"/>
           </circle>
 
@@ -115,29 +115,29 @@
           <text x="220" y="228" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#2D5016" letter-spacing="2">LOOP</text>
 
           <!-- 8 nodes around orbit (r=145, center=220) -->
-          <!-- Standard nodes -->
-          <g><circle cx="220" cy="75" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="220" cy="75" r="3" fill="#2D5016"/></g>
-          <g><circle cx="322.5" cy="117.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="322.5" cy="117.5" r="3" fill="#2D5016"/></g>
-          <g><circle cx="322.5" cy="322.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="322.5" cy="322.5" r="3" fill="#2D5016"/></g>
-          <g><circle cx="220" cy="365" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="220" cy="365" r="3" fill="#2D5016"/></g>
-          <g><circle cx="117.5" cy="322.5" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="117.5" cy="322.5" r="3" fill="#2D5016"/></g>
-          <g><circle cx="75" cy="220" r="8" fill="#EEF0EB" stroke="#2D5016" stroke-width="1.5"/><circle cx="75" cy="220" r="3" fill="#2D5016"/></g>
+          <!-- Standard nodes — solid forest green -->
+          <g><circle cx="220" cy="75" r="10" fill="#2D5016"/></g>
+          <g><circle cx="322.5" cy="117.5" r="10" fill="#2D5016"/></g>
+          <g><circle cx="322.5" cy="322.5" r="10" fill="#2D5016"/></g>
+          <g><circle cx="220" cy="365" r="10" fill="#2D5016"/></g>
+          <g><circle cx="117.5" cy="322.5" r="10" fill="#2D5016"/></g>
+          <g><circle cx="75" cy="220" r="10" fill="#2D5016"/></g>
 
-          <!-- Highlighted nodes (3→right, 5→bottom-left, 8→top-left) -->
-          <g><circle cx="365" cy="220" r="11" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2"/><circle cx="365" cy="220" r="4.5" fill="#8B9D3B"/></g>
-          <g><circle cx="117.5" cy="117.5" r="11" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2"/><circle cx="117.5" cy="117.5" r="4.5" fill="#8B9D3B"/></g>
+          <!-- Highlighted nodes — solid moss green -->
+          <g><circle cx="365" cy="220" r="13" fill="#8B9D3B"/></g>
+          <g><circle cx="117.5" cy="117.5" r="13" fill="#8B9D3B"/></g>
 
           <!-- Subtle connecting arcs -->
-          <line x1="220" y1="75" x2="365" y2="220" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-          <line x1="365" y1="220" x2="220" y2="365" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-          <line x1="220" y1="365" x2="75" y2="220" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-          <line x1="75" y1="220" x2="220" y2="75" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+          <line x1="220" y1="75" x2="365" y2="220" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="365" y1="220" x2="220" y2="365" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="220" y1="365" x2="75" y2="220" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="75" y1="220" x2="220" y2="75" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
 
-          <!-- Labels for hero — small, clean -->
-          <text x="220" y="58" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="9" fill="#7A7A72">Policy</text>
-          <text x="390" y="224" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="9" fill="#8B9D3B" font-weight="600">Score ✦</text>
-          <text x="90" y="106" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="9" fill="#8B9D3B" font-weight="600">Feedback ✦</text>
-          <text x="50" y="244" text-anchor="end" font-family="Source Sans 3,sans-serif" font-size="9" fill="#7A7A72">Disposition</text>
+          <!-- Labels for hero — legible at diagram size -->
+          <text x="220" y="56" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Policy</text>
+          <text x="392" y="224" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="11" fill="#8B9D3B" font-weight="600">Score ✦</text>
+          <text x="88" y="104" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="11" fill="#8B9D3B" font-weight="600">Feedback ✦</text>
+          <text x="48" y="248" text-anchor="end" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Disposition</text>
         </svg>
       </div>
     </div>
@@ -224,8 +224,8 @@
 
         <!-- Background ring -->
         <circle cx="320" cy="320" r="265" stroke="#C8D5B9" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
-        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="1.5" opacity="0.2"/>
-        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="2.5" stroke-dasharray="100 1283" stroke-linecap="round" opacity="0.4">
+        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="4" opacity="0.7"/>
+        <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="5" stroke-dasharray="100 1283" stroke-linecap="round" opacity="0.85">
           <animateTransform attributeName="transform" type="rotate" from="0 320 320" to="360 320 320" dur="12s" repeatCount="indefinite"/>
         </circle>
 
@@ -243,71 +243,71 @@
         -->
 
         <!-- Subtle spoke lines -->
-        <line x1="320" y1="100" x2="540" y2="320" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-        <line x1="540" y1="320" x2="320" y2="540" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-        <line x1="320" y1="540" x2="100" y2="320" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
-        <line x1="100" y1="320" x2="320" y2="100" stroke="#C8D5B9" stroke-width="0.5" stroke-dasharray="3 5"/>
+        <line x1="320" y1="100" x2="540" y2="320" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <line x1="540" y1="320" x2="320" y2="540" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <line x1="320" y1="540" x2="100" y2="320" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+        <line x1="100" y1="320" x2="320" y2="100" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
 
         <!-- Stage 1 -->
         <g class="loop-node" data-stage="1" data-title="Policy Generation" data-desc="Retailer preferences shape return window, refund percentage, and restocking fee — the starting configuration for every customer interaction." style="cursor:pointer">
-          <circle cx="320" cy="100" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
-          <text x="320" y="104" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">01</text>
-          <text x="320" y="72" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Policy Generation</text>
+          <circle cx="320" cy="100" r="22" fill="#2D5016" class="node-ring"/>
+          <text x="320" y="104" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">01</text>
+          <text x="320" y="70" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Policy Generation</text>
         </g>
 
         <!-- Stage 2 -->
         <g class="loop-node" data-stage="2" data-title="Transaction Capture" data-desc="Every order records product, customer, channel, and value context — the raw material for every score and prediction downstream." style="cursor:pointer">
-          <circle cx="475.6" cy="164.4" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
-          <text x="475.6" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">02</text>
-          <text x="520" y="145" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Transaction</text>
-          <text x="520" y="158" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Capture</text>
+          <circle cx="475.6" cy="164.4" r="22" fill="#2D5016" class="node-ring"/>
+          <text x="475.6" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">02</text>
+          <text x="523" y="145" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Transaction</text>
+          <text x="523" y="160" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Capture</text>
         </g>
 
         <!-- Stage 3 — HIGHLIGHTED -->
         <g class="loop-node" data-stage="3" data-title="Score Building" data-desc="CRRS, RAF-P, and C scores maintained continuously. CircuLogic's proprietary actuarial engine builds and updates five risk dimensions on every event." style="cursor:pointer">
-          <circle cx="540" cy="320" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
-          <text x="540" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">03</text>
-          <text x="588" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Score</text>
-          <text x="588" y="327" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Building ✦</text>
+          <circle cx="540" cy="320" r="26" fill="#8B9D3B" class="node-ring"/>
+          <text x="540" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">03</text>
+          <text x="592" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Score</text>
+          <text x="592" y="329" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Building ✦</text>
         </g>
 
         <!-- Stage 4 -->
         <g class="loop-node" data-stage="4" data-title="Return Initiation" data-desc="Customer initiates return; transit window opens (3–7 days). This window is the intelligence opportunity — CircuLogic uses every minute of it." style="cursor:pointer">
-          <circle cx="475.6" cy="475.6" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
-          <text x="475.6" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">04</text>
-          <text x="520" y="498" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Return</text>
-          <text x="520" y="511" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Initiation</text>
+          <circle cx="475.6" cy="475.6" r="22" fill="#2D5016" class="node-ring"/>
+          <text x="475.6" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">04</text>
+          <text x="523" y="500" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Return</text>
+          <text x="523" y="515" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Initiation</text>
         </g>
 
         <!-- Stage 5 — HIGHLIGHTED -->
         <g class="loop-node" data-stage="5" data-title="Pre-Computation" data-desc="All signals assembled during transit at zero marginal cost. Full risk analysis completes before the package arrives — no latency at warehouse." style="cursor:pointer">
-          <circle cx="320" cy="540" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
-          <text x="320" y="544" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">05</text>
-          <text x="320" y="580" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Pre-Computation ✦</text>
+          <circle cx="320" cy="540" r="26" fill="#8B9D3B" class="node-ring"/>
+          <text x="320" y="544" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">05</text>
+          <text x="320" y="582" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Pre-Computation ✦</text>
         </g>
 
         <!-- Stage 6 -->
         <g class="loop-node" data-stage="6" data-title="Warehouse Receipt &amp; Inspection" data-desc="Physical condition confirmed, disposition recommendation finalized. CircuLogic delivers a complete action plan — the warehouse simply executes." style="cursor:pointer">
-          <circle cx="164.4" cy="475.6" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
-          <text x="164.4" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">06</text>
-          <text x="115" y="498" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Warehouse</text>
-          <text x="115" y="511" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Receipt</text>
+          <circle cx="164.4" cy="475.6" r="22" fill="#2D5016" class="node-ring"/>
+          <text x="164.4" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">06</text>
+          <text x="112" y="500" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Warehouse</text>
+          <text x="112" y="515" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Receipt</text>
         </g>
 
         <!-- Stage 7 -->
         <g class="loop-node" data-stage="7" data-title="Disposition Actioned" data-desc="Item routed to the optimal recovery channel — resale, refurbishment, liquidation, or donation. The right decision for this item, this condition, this market moment." style="cursor:pointer">
-          <circle cx="100" cy="320" r="22" fill="#F7F5F2" stroke="#2D5016" stroke-width="1.5" class="node-ring"/>
-          <text x="100" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#2D5016">07</text>
-          <text x="55" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Disposition</text>
-          <text x="55" y="327" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Actioned</text>
+          <circle cx="100" cy="320" r="22" fill="#2D5016" class="node-ring"/>
+          <text x="100" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">07</text>
+          <text x="50" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Disposition</text>
+          <text x="50" y="329" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Actioned</text>
         </g>
 
         <!-- Stage 8 — HIGHLIGHTED -->
         <g class="loop-node" data-stage="8" data-title="Outcome Feedback" data-desc="Actual recovery value feeds back into scores, closing the loop. Every return makes the model smarter — CircuLogic's unique actuarial feedback architecture." style="cursor:pointer">
-          <circle cx="164.4" cy="164.4" r="26" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="2" class="node-ring"/>
-          <text x="164.4" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="10" font-weight="700" fill="#8B9D3B">08</text>
-          <text x="115" y="142" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Outcome ✦</text>
-          <text x="115" y="155" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" font-weight="600" fill="#8B9D3B">Feedback</text>
+          <circle cx="164.4" cy="164.4" r="26" fill="#8B9D3B" class="node-ring"/>
+          <text x="164.4" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">08</text>
+          <text x="112" y="142" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Outcome ✦</text>
+          <text x="112" y="157" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Feedback</text>
         </g>
       </svg>
 

@@ -9,7 +9,7 @@
 :root {
   /* Backgrounds */
   --bg-warm:       #F7F5F2;
-  --bg-sage:       #EEF0EB;
+  --bg-sage:       #D4DEC8;
   --bg-white:      #FFFFFF;
   --bg-footer:     #2D5016;
 
@@ -26,7 +26,7 @@
   --moss:          #8B9D3B;
   --moss-light:    rgba(139, 157, 59, 0.15);
   --sage:          #C8D5B9;
-  --sage-light:    rgba(200, 213, 185, 0.35);
+  --sage-light:    rgba(200, 213, 185, 0.55);
   --sage-border:   rgba(200, 213, 185, 0.6);
 
   /* Functional */
@@ -605,7 +605,7 @@ section {
 .metric-card {
   background: var(--bg-white);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--sage);
+  border-left: 4px solid var(--moss);
   border-radius: var(--radius-lg);
   padding: var(--space-8) var(--space-8) var(--space-6);
   transition: transform var(--duration-fast) var(--ease-gentle),
