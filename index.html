@@ -95,68 +95,92 @@
         </div>
       </div>
 
-      <!-- Hero visual: elegant circular arc diagram -->
+      <!-- Hero visual: full 8-stage Closed Loop diagram -->
       <div class="hero-visual" aria-hidden="true">
-        <svg viewBox="0 0 440 440" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Decorative outer rings -->
-          <circle cx="220" cy="220" r="210" stroke="#C8D5B9" stroke-width="1" stroke-dasharray="6 4" opacity="0.5"/>
-          <circle cx="220" cy="220" r="180" stroke="#C8D5B9" stroke-width="1" opacity="0.6"/>
+        <svg class="loop-diagram-svg" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg" overflow="visible">
 
-          <!-- Main orbit -->
-          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="4" opacity="0.7"/>
-          <circle cx="220" cy="220" r="145" stroke="#2D5016" stroke-width="5" stroke-dasharray="70 842" stroke-linecap="round" opacity="0.85">
-            <animateTransform attributeName="transform" type="rotate" from="0 220 220" to="360 220 220" dur="10s" repeatCount="indefinite"/>
+          <!-- Background ring -->
+          <circle cx="320" cy="320" r="265" stroke="#C8D5B9" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+          <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="4" opacity="0.7"/>
+          <circle cx="320" cy="320" r="220" stroke="#2D5016" stroke-width="5" stroke-dasharray="100 1283" stroke-linecap="round" opacity="0.85">
+            <animateTransform attributeName="transform" type="rotate" from="0 320 320" to="360 320 320" dur="12s" repeatCount="indefinite"/>
           </circle>
 
           <!-- Center -->
-          <circle cx="220" cy="220" r="52" fill="#F7F5F2" stroke="#C8D5B9" stroke-width="1.5"/>
-          <circle cx="220" cy="220" r="36" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="1" opacity="0.6"/>
-          <text x="220" y="216" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#2D5016" letter-spacing="2">CLOSED</text>
-          <text x="220" y="228" text-anchor="middle" font-family="Space Mono,monospace" font-size="7.5" fill="#2D5016" letter-spacing="2">LOOP</text>
+          <circle cx="320" cy="320" r="65" fill="#F7F5F2" stroke="#C8D5B9" stroke-width="1.5"/>
+          <circle cx="320" cy="320" r="45" fill="#EEF0EB" stroke="#8B9D3B" stroke-width="1" opacity="0.6"/>
+          <text x="320" y="316" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#2D5016" letter-spacing="2">CLOSED</text>
+          <text x="320" y="328" text-anchor="middle" font-family="Space Mono,monospace" font-size="8" fill="#2D5016" letter-spacing="2">LOOP</text>
 
-          <!-- 8 nodes around orbit (r=145, center=220) -->
-          <!-- Standard nodes — solid forest green -->
-          <g><circle cx="220" cy="75" r="10" fill="#2D5016"/></g>
-          <g><circle cx="322.5" cy="117.5" r="10" fill="#2D5016"/></g>
-          <g><circle cx="322.5" cy="322.5" r="10" fill="#2D5016"/></g>
-          <g><circle cx="220" cy="365" r="10" fill="#2D5016"/></g>
-          <g><circle cx="117.5" cy="322.5" r="10" fill="#2D5016"/></g>
-          <g><circle cx="75" cy="220" r="10" fill="#2D5016"/></g>
+          <!-- Subtle spoke lines -->
+          <line x1="320" y1="100" x2="540" y2="320" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="540" y1="320" x2="320" y2="540" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="320" y1="540" x2="100" y2="320" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <line x1="100" y1="320" x2="320" y2="100" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
 
-          <!-- Highlighted nodes — solid moss green -->
-          <g><circle cx="365" cy="220" r="13" fill="#8B9D3B"/></g>
-          <g><circle cx="117.5" cy="117.5" r="13" fill="#8B9D3B"/></g>
+          <!-- Stage 1 -->
+          <g>
+            <circle cx="320" cy="100" r="22" fill="#2D5016"/>
+            <text x="320" y="104" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">01</text>
+            <text x="320" y="70" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Policy Generation</text>
+          </g>
 
-          <!-- Subtle connecting arcs -->
-          <line x1="220" y1="75" x2="365" y2="220" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
-          <line x1="365" y1="220" x2="220" y2="365" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
-          <line x1="220" y1="365" x2="75" y2="220" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
-          <line x1="75" y1="220" x2="220" y2="75" stroke="#8B9D3B" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <!-- Stage 2 -->
+          <g>
+            <circle cx="475.6" cy="164.4" r="22" fill="#2D5016"/>
+            <text x="475.6" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">02</text>
+            <text x="523" y="145" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Transaction</text>
+            <text x="523" y="160" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Capture</text>
+          </g>
 
-          <!-- Labels for hero — legible at diagram size -->
-          <text x="220" y="56" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Policy</text>
-          <text x="392" y="224" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="11" fill="#8B9D3B" font-weight="600">Score ✦</text>
-          <text x="88" y="104" text-anchor="start" font-family="Source Sans 3,sans-serif" font-size="11" fill="#8B9D3B" font-weight="600">Feedback ✦</text>
-          <text x="48" y="248" text-anchor="end" font-family="Source Sans 3,sans-serif" font-size="11" fill="#3D3D3A">Disposition</text>
+          <!-- Stage 3 — HIGHLIGHTED -->
+          <g>
+            <circle cx="540" cy="320" r="26" fill="#8B9D3B"/>
+            <text x="540" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">03</text>
+            <text x="592" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Score</text>
+            <text x="592" y="329" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Building ✦</text>
+          </g>
+
+          <!-- Stage 4 -->
+          <g>
+            <circle cx="475.6" cy="475.6" r="22" fill="#2D5016"/>
+            <text x="475.6" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">04</text>
+            <text x="523" y="500" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Return</text>
+            <text x="523" y="515" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Initiation</text>
+          </g>
+
+          <!-- Stage 5 — HIGHLIGHTED -->
+          <g>
+            <circle cx="320" cy="540" r="26" fill="#8B9D3B"/>
+            <text x="320" y="544" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">05</text>
+            <text x="320" y="582" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Pre-Computation ✦</text>
+          </g>
+
+          <!-- Stage 6 -->
+          <g>
+            <circle cx="164.4" cy="475.6" r="22" fill="#2D5016"/>
+            <text x="164.4" y="479.6" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">06</text>
+            <text x="112" y="500" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Warehouse</text>
+            <text x="112" y="515" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Receipt</text>
+          </g>
+
+          <!-- Stage 7 -->
+          <g>
+            <circle cx="100" cy="320" r="22" fill="#2D5016"/>
+            <text x="100" y="324" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">07</text>
+            <text x="50" y="314" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Disposition</text>
+            <text x="50" y="329" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="600" fill="#1C1C1A">Actioned</text>
+          </g>
+
+          <!-- Stage 8 — HIGHLIGHTED -->
+          <g>
+            <circle cx="164.4" cy="164.4" r="26" fill="#8B9D3B"/>
+            <text x="164.4" y="168.4" text-anchor="middle" font-family="Space Mono,monospace" font-size="12" font-weight="700" fill="#FFFFFF">08</text>
+            <text x="112" y="142" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Outcome ✦</text>
+            <text x="112" y="157" text-anchor="middle" font-family="Source Sans 3,sans-serif" font-size="13" font-weight="700" fill="#2D5016">Feedback</text>
+          </g>
         </svg>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════
-     SOCIAL PROOF STRIP
-     ════════════════════════════════════════════ -->
-<!-- Replace placeholder logo areas with actual client logos when available -->
-<section id="social-proof">
-  <div class="container">
-    <p class="proof-text reveal">Trusted by retail and ecommerce teams managing returns intelligence</p>
-    <div class="proof-logos reveal reveal-d1">
-      <div class="proof-logo">Brand Partner</div>
-      <div class="proof-logo">Brand Partner</div>
-      <div class="proof-logo">Brand Partner</div>
-      <div class="proof-logo">Brand Partner</div>
-      <div class="proof-logo">Brand Partner</div>
     </div>
   </div>
 </section>

@@ -127,9 +127,10 @@ input, select, textarea { font-family: inherit; }
 .section-label {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
+  font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--moss);
+  color: var(--green);
   margin-bottom: var(--space-4);
   display: block;
 }
@@ -271,7 +272,7 @@ section {
 
 .nav-links a {
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-muted);
   transition: color var(--duration-fast);
 }
@@ -347,7 +348,8 @@ section {
   align-items: center;
   gap: var(--space-2);
   font-family: var(--font-mono);
-  font-size: var(--text-xs);
+  font-size: var(--text-sm);
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--moss);
@@ -421,45 +423,8 @@ section {
 
 .hero-visual svg {
   width: 100%;
-  max-width: 440px;
-}
-
-/* ── 7. Social Proof Strip ────────────────────────────────── */
-#social-proof {
-  padding: var(--space-12) 0;
-  background: var(--bg-white);
-  border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
-}
-
-.proof-text {
-  text-align: center;
-  font-size: var(--text-sm);
-  color: var(--text-light);
-  letter-spacing: 0.04em;
-  margin-bottom: var(--space-8);
-}
-
-.proof-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--space-8);
-  flex-wrap: wrap;
-}
-
-.proof-logo {
-  width: 140px;
-  height: 48px;
-  border-radius: var(--radius-md);
-  background: var(--bg-sage);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-body);
-  font-size: var(--text-xs);
-  color: var(--text-light);
-  letter-spacing: 0.08em;
+  max-width: 520px;
+  overflow: visible;
 }
 
 /* ── 8. Problem Section ───────────────────────────────────── */
